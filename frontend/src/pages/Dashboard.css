@@ -1,0 +1,131 @@
+.dashboard { max-width: 900px; }
+
+.dash-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.dash-greet { color: #7a8099; font-size: 14px; margin-bottom: 4px; }
+.dash-top h1 { font-size: 1.8rem; }
+
+.streak-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #13161e;
+  border: 1px solid #272b38;
+  border-radius: 14px;
+  padding: 12px 20px;
+}
+
+.streak-num { font-size: 1.6rem; font-weight: 800; color: #fbbf24; line-height: 1; }
+.streak-label { font-size: 12px; color: #7a8099; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #13161e;
+  border: 1px solid #272b38;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7a8099;
+  margin-bottom: 8px;
+}
+
+.stat-num { font-size: 2rem; font-weight: 800; line-height: 1; margin-bottom: 4px; }
+.stat-sub { font-size: 12px; color: #7a8099; }
+
+.stat-card.green .stat-num { color: #6ee7b7; }
+.stat-card.blue  .stat-num { color: #7dd3fc; }
+.stat-card.red   .stat-num { color: #f87171; }
+.stat-card.yellow .stat-num { color: #fbbf24; }
+
+.dash-bottom {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 16px;
+  align-items: start;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.section-head h2 { font-size: 1rem; }
+.see-all { font-size: 13px; color: #6ee7b7; }
+
+.deadline-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #1a1e2a;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.deadline-title {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quick-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: #7a8099;
+  font-size: 14px;
+  transition: all 0.15s;
+  margin-bottom: 4px;
+}
+.quick-link:hover { background: #1a1e2a; color: #e8eaf0; }
+
+.progress-bar {
+  height: 7px;
+  background: #1e2230;
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6ee7b7, #7dd3fc);
+  border-radius: 99px;
+  min-width: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #7a8099;
+}
+
+@media (max-width: 900px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .dash-bottom { grid-template-columns: 1fr; }
+}

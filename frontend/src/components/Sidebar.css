@@ -1,0 +1,99 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background: #13161e;
+  border-right: 1px solid #272b38;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px 24px;
+  border-bottom: 1px solid #272b38;
+}
+
+.brand-icon {
+  font-size: 1.4rem;
+  background: rgba(110,231,183,0.1);
+  border: 1px solid rgba(110,231,183,0.2);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.brand-sub {
+  font-size: 11px;
+  color: #6ee7b7;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 16px 12px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #7a8099;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.nav-item:hover {
+  background: #1a1e2a;
+  color: #e8eaf0;
+}
+
+.nav-item.active {
+  background: rgba(110,231,183,0.1);
+  color: #6ee7b7;
+  border: 1px solid rgba(110,231,183,0.2);
+}
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid #272b38;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #1a1e2a;
+  border: 1px solid #272b38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.user-name { font-size: 13px; font-weight: 600; }
+.user-sub  { font-size: 11px; color: #7a8099; }

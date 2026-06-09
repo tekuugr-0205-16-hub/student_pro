@@ -1,0 +1,53 @@
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  transition: border-color 0.2s;
+}
+
+.stat-card:hover { border-color: var(--text-dim); }
+
+.stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.stat-icon { font-size: 1.1rem; }
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: var(--sp-1);
+}
+
+.stat-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Accent variants */
+.stat-green .stat-value  { color: var(--accent); }
+.stat-yellow .stat-value { color: var(--warn); }
+.stat-red .stat-value    { color: var(--danger); }
+.stat-blue .stat-value   { color: var(--blue); }
+
+.stat-green  { border-color: var(--accent-glow); background: linear-gradient(135deg, var(--bg-card), rgba(110,231,183,0.04)); }
+.stat-yellow { border-color: rgba(251,191,36,0.2); }
+.stat-red    { border-color: rgba(248,113,113,0.2); }
+.stat-blue   { border-color: rgba(125,211,252,0.2); }
